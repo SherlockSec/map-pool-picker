@@ -1,0 +1,491 @@
+<html>
+
+
+	<head>
+
+		<title>osu! Map Pool Picker</title>
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	    <link rel="stylesheet" href="style.css">
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	    <!--Import Google Icon Font-->
+      	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+		</script>
+
+
+
+	</head>
+	<body>
+
+		<!-- <h1>Hello World</h1> -->
+		<nav>
+			
+			<div class="nav-wrapper purple accent-3 z-depth-1">
+				
+				<a href="#" class="brand-logo center">Map Pool</a>
+				<a class="waves effect waves-light btn black" id="card-reset">Reset</a>
+			</div>
+
+		</nav>
+
+		<!-- Cards -->
+		<div class="row">
+			
+			<div class="col s3">
+				
+				<div class="card z-depth-4" id="card1">
+					
+					<div class="card-image">
+
+						<!-- Replace number with beatmap number ^w^ -->
+						<img src="https://assets.ppy.sh/beatmaps/33651/covers/cover.jpg" />
+						<a class=" left btn-floating halfway-fab waves-effect waves-light blue" id="card1-blue"><i class="material-icons">add</i></a>
+						<a class="btn-floating halfway-fab waves-effect waves-light red" id="card1-red"><i class="material-icons">add</i></a>
+
+					</div>
+					<div class="card-content" >
+						<span class="black-text" id="card1-text"><h5>Song - Rubik's Cube</h5><h3 class="right">NM</h3><br />Artist - Hatsune Miku<br />Difficulty - 3x3x3(2.27*)<br /></span>
+
+					</div>
+					<div class="card-action">
+						
+						<a class="black-text" href="https://osu.ppy.sh/beatmapsets/33651" id="card1-button">Download</a>
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col s3">
+				
+				<div class="card z-depth-4" id="card2">
+					
+					<div class="card-image">
+
+						<!-- Replace number with beatmap number ^w^ -->
+						<img src="https://assets.ppy.sh/beatmaps/550035/covers/cover.jpg" />
+						<a class=" left btn-floating halfway-fab waves-effect waves-light blue" id="card2-blue"><i class="material-icons">add</i></a>
+						<a class="btn-floating halfway-fab waves-effect waves-light red" id="card2-red"><i class="material-icons">add</i></a>
+
+					</div>
+					<div class="card-content">
+						<span class="black-text" id="card2-text"><h5>Song - TOMORROW</h5><h3 class="right">NM</h3><br />Artist - Machico<br />Difficulty - Ironas' Hard(2.68*)<br /></span>
+
+					</div>
+					<div class="card-action">
+						
+						<a class="black-text" href="https://osu.ppy.sh/beatmapsets/550035" id="card2-button">Download</a>
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col s3">
+				
+				<div class="card z-depth-4" id="card3">
+					
+					<div class="card-image">
+
+						<!-- Replace number with beatmap number ^w^ -->
+						<img src="https://assets.ppy.sh/beatmaps/757410/covers/cover.jpg" />
+						<a class=" left btn-floating halfway-fab waves-effect waves-light blue" id="card3-blue"><i class="material-icons">add</i></a>
+						<a class="btn-floating halfway-fab waves-effect waves-light red" id="card3-red"><i class="material-icons">add</i></a>
+
+					</div>
+					<div class="card-content">
+						<span class="black-text" id="card3-text"><h5>Song - SAD!</h5><h3 class="right">NM</h3><br />Artist - XXXTENTACION<br />Difficulty - Insane(3.48*)<br /></span>
+
+					</div>
+					<div class="card-action">
+						
+						<a class="black-text" href="https://osu.ppy.sh/beatmapsets/757410" id="card3-button">Download</a>
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col s3">
+				
+				<div class="card z-depth-4" id="card4">
+					
+					<div class="card-image">
+
+						<!-- Replace number with beatmap number ^w^ -->
+						<img src="https://assets.ppy.sh/beatmaps/33842/covers/cover.jpg" />
+						<a class=" left btn-floating halfway-fab waves-effect waves-light blue" id="card4-blue"><i class="material-icons">add</i></a>
+						<a class="btn-floating halfway-fab waves-effect waves-light red" id="card4-red"><i class="material-icons">add</i></a>
+
+					</div>
+					<div class="card-content">
+						<span class="black-text" id="card4-text"><h5>Song - Rockefeller Street</h5><h3 class="right">NM</h3><br />Artist - Getter Jaani<br />Difficulty - Andrea(3.43*)<br /></span>
+
+					</div>
+					<div class="card-action">
+						
+						<a class="black-text" href="https://osu.ppy.sh/beatmapsets/33842" id="card4-button">Download</a>
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col s3">
+				
+				<div class="card z-depth-4" id="card5">
+					
+					<div class="card-image">
+
+						<!-- Replace number with beatmap number ^w^ -->
+						<img src="https://assets.ppy.sh/beatmaps/532522/covers/cover.jpg" />
+						<a class=" left btn-floating halfway-fab waves-effect waves-light blue" id="card5-blue"><i class="material-icons">add</i></a>
+						<a class="btn-floating halfway-fab waves-effect waves-light red" id="card5-red"><i class="material-icons">add</i></a>
+
+					</div>
+					<div class="card-content">
+						<span class="black-text" id="card5-text"><h5>Song - osu!memories</h5><h3 class="right">NM</h3><br />Artist - SakiZ<br />Difficulty - Happy Memories(6.29*)<br /></span>
+
+					</div>
+					<div class="card-action">
+						
+						<a class="black-text" href="https://osu.ppy.sh/beatmapsets/532522" id="card5-button">Download</a>
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col s3">
+				
+				<div class="card z-depth-4" id="card6">
+					
+					<div class="card-image">
+
+						<!-- Replace number with beatmap number ^w^ -->
+						<img src="https://assets.ppy.sh/beatmaps/24313/covers/cover.jpg" />
+						<a class=" left btn-floating halfway-fab waves-effect waves-light blue" id="card6-blue"><i class="material-icons">add</i></a>
+						<a class="btn-floating halfway-fab waves-effect waves-light red" id="card6-red"><i class="material-icons">add</i></a>
+
+					</div>
+					<div class="card-content">
+						<span class="black-text" id="card6-text"><h5>Song - Can’t Defeat Airman</h5><h3 class="right">NM</h3><br />Artist - Team Nekokan<br />Difficulty - Holy Shit! It's Airman!!(7.03*)<br /></span>
+
+					</div>
+					<div class="card-action">
+						
+						<a class="black-text" href="https://osu.ppy.sh/beatmapsets/24313" id="card6-button">Download</a>
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col s3">
+				
+				<div class="card z-depth-4" id="card7">
+					
+					<div class="card-image">
+
+						<!-- Replace number with beatmap number ^w^ -->
+						<img src="https://assets.ppy.sh/beatmaps/351630/covers/cover.jpg" />
+						<a class=" left btn-floating halfway-fab waves-effect waves-light blue" id="card7-blue"><i class="material-icons">add</i></a>
+						<a class="btn-floating halfway-fab waves-effect waves-light red" id="card7-red"><i class="material-icons">add</i></a>
+
+					</div>
+					<div class="card-content">
+						<span class="black-text" id="card7-text"><h5>Song - Remote Control</h5><h3 class="right">NM</h3><br />Artist - kradness&Reol<br />Difficulty - Max Control!(5.72*)<br /></span>
+
+					</div>
+					<div class="card-action">
+						
+						<a class="black-text" href="https://osu.ppy.sh/beatmapsets/351630" id="card7-button">Download</a>
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col s3">
+				
+				<div class="card z-depth-4" id="card8">
+					
+					<div class="card-image">
+
+						<!-- Replace number with beatmap number ^w^ -->
+						<img src="https://assets.ppy.sh/beatmaps/158023/covers/cover.jpg" />
+						<a class=" left btn-floating halfway-fab waves-effect waves-light blue" id="card8-blue"><i class="material-icons">add</i></a>
+						<a class="btn-floating halfway-fab waves-effect waves-light red" id="card8-red"><i class="material-icons">add</i></a>
+
+					</div>
+					<div class="card-content">
+						<span class="black-text" id="card8-text"><h5>Song - Everything will freeze</h5><h3 class="right">HR</h3><br />Artist - UNDEAD CORPORATION<br />Difficulty - Normal (1.76*)<br /></span>
+
+					</div>
+					<div class="card-action">
+						
+						<a class="black-text" href="https://osu.ppy.sh/beatmapsets/158023" id="card8-button">Download</a>
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col s3">
+				
+				<div class="card z-depth-4" id="card9">
+					
+					<div class="card-image">
+
+						<!-- Replace number with beatmap number ^w^ -->
+						<img src="https://assets.ppy.sh/beatmaps/375648/covers/cover.jpg" />
+						<a class=" left btn-floating halfway-fab waves-effect waves-light blue" id="card9-blue"><i class="material-icons">add</i></a>
+						<a class="btn-floating halfway-fab waves-effect waves-light red" id="card9-red"><i class="material-icons">add</i></a>
+
+					</div>
+					<div class="card-content">
+						<span class="black-text" id="card9-text"><h5>Song - Bass Slut </h5><h3 class="right">HR</h3><br />Artist - S3RL<br />Difficulty - Normal (2.11*)<br /></span>
+
+					</div>
+					<div class="card-action">
+						
+						<a class="black-text" href="https://osu.ppy.sh/beatmapsets/375648" id="card9-button">Download</a>
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col s3">
+				
+				<div class="card z-depth-4" id="card10">
+					
+					<div class="card-image">
+
+						<!-- Replace number with beatmap number ^w^ -->
+						<img src="https://assets.ppy.sh/beatmaps/513590/covers/cover.jpg" />
+						<a class=" left btn-floating halfway-fab waves-effect waves-light blue" id="card10-blue"><i class="material-icons">add</i></a>
+						<a class="btn-floating halfway-fab waves-effect waves-light red" id="card10-red"><i class="material-icons">add</i></a>
+
+					</div>
+					<div class="card-content">
+						<span class="black-text" id="card10-text"><h5>Song - Zen Zen Zense</h5><h3 class="right">HR</h3><br />Artist - RADWIMPS<br />Difficulty - Kalibe's Hard(3.29*)<br /></span>
+
+					</div>
+					<div class="card-action">
+						
+						<a class="black-text" href="https://osu.ppy.sh/beatmapsets/513590" id="card10-button">Download</a>
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col s3">
+				
+				<div class="card z-depth-4" id="card11">
+					
+					<div class="card-image">
+
+						<!-- Replace number with beatmap number ^w^ -->
+						<img src="https://assets.ppy.sh/beatmaps/770300/covers/cover.jpg" />
+						<a class=" left btn-floating halfway-fab waves-effect waves-light blue" id="card11-blue"><i class="material-icons">add</i></a>
+						<a class="btn-floating halfway-fab waves-effect waves-light red" id="card11-red"><i class="material-icons">add</i></a>
+
+					</div>
+					<div class="card-content">
+						<span class="black-text" id="card11-text"><h5>Song - Monochrome Butterfly</h5><h3 class="right">HR</h3><br />Artist - Aitsuki Nakuru<br />Difficulty - Shunao's Hard(3.45*)<br /></span>
+
+					</div>
+					<div class="card-action">
+						
+						<a class="black-text" href="https://osu.ppy.sh/beatmapsets/770300" id="card11-button">Download</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<script>
+
+
+			
+			$("#card1-blue").click(function() {
+				$("#card1").toggleClass('blue');
+				$("#card1-text").toggleClass('black-text');
+				$("#card1-text").toggleClass('white-text');
+				$("#card1-button").toggleClass('black-text');
+				$("#card1-button").toggleClass('white-text');
+			});
+			$("#card1-red").click(function() {
+				$("#card1").toggleClass('red');
+				$("#card1-text").toggleClass('black-text');
+				$("#card1-text").toggleClass('white-text');
+				$("#card1-button").toggleClass('black-text');
+				$("#card1-button").toggleClass('white-text');
+			});
+			$("#card2-blue").click(function() {
+				$("#card2").toggleClass('blue');
+				$("#card2-text").toggleClass('black-text');
+				$("#card2-text").toggleClass('white-text');
+				$("#card2-button").toggleClass('black-text');
+				$("#card2-button").toggleClass('white-text');
+			});
+			$("#card2-red").click(function() {
+				$("#card2").toggleClass('red');
+				$("#card2-text").toggleClass('black-text');
+				$("#card2-text").toggleClass('white-text');
+				$("#card2-button").toggleClass('black-text');
+				$("#card2-button").toggleClass('white-text');
+			});
+			$("#card3-blue").click(function() {
+				$("#card3").toggleClass('blue');
+				$("#card3-text").toggleClass('black-text');
+				$("#card3-text").toggleClass('white-text');
+				$("#card3-button").toggleClass('black-text');
+				$("#card3-button").toggleClass('white-text');
+			});
+			$("#card3-red").click(function() {
+				$("#card3").toggleClass('red');
+				$("#card3-text").toggleClass('black-text');
+				$("#card3-text").toggleClass('white-text');
+				$("#card3-button").toggleClass('black-text');
+				$("#card3-button").toggleClass('white-text');
+			});
+			$("#card4-blue").click(function() {
+				$("#card4").toggleClass('blue');
+				$("#card4-text").toggleClass('black-text');
+				$("#card4-text").toggleClass('white-text');
+				$("#card4-button").toggleClass('black-text');
+				$("#card4-button").toggleClass('white-text');
+			});
+			$("#card4-red").click(function() {
+				$("#card4").toggleClass('red');
+				$("#card4-text").toggleClass('black-text');
+				$("#card4-text").toggleClass('white-text');
+				$("#card4-button").toggleClass('black-text');
+				$("#card4-button").toggleClass('white-text');
+			});
+			$("#card5-blue").click(function() {
+				$("#card5").toggleClass('blue');
+				$("#card5-text").toggleClass('black-text');
+				$("#card5-text").toggleClass('white-text');
+				$("#card5-button").toggleClass('black-text');
+				$("#card5-button").toggleClass('white-text');
+			});
+			$("#card5-red").click(function() {
+				$("#card5").toggleClass('red');
+				$("#card5-text").toggleClass('black-text');
+				$("#card5-text").toggleClass('white-text');
+				$("#card5-button").toggleClass('black-text');
+				$("#card5-button").toggleClass('white-text');
+			});
+			$("#card6-blue").click(function() {
+				$("#card6").toggleClass('blue');
+				$("#card6-text").toggleClass('black-text');
+				$("#card6-text").toggleClass('white-text');
+				$("#card6-button").toggleClass('black-text');
+				$("#card6-button").toggleClass('white-text');
+			});
+			$("#card6-red").click(function() {
+				$("#card6").toggleClass('red');
+				$("#card6-text").toggleClass('black-text');
+				$("#card6-text").toggleClass('white-text');
+				$("#card6-button").toggleClass('black-text');
+				$("#card6-button").toggleClass('white-text');
+			});
+			$("#card7-blue").click(function() {
+				$("#card7").toggleClass('blue');
+				$("#card7-text").toggleClass('black-text');
+				$("#card7-text").toggleClass('white-text');
+				$("#card7-button").toggleClass('black-text');
+				$("#card7-button").toggleClass('white-text');
+			});
+			$("#card7-red").click(function() {
+				$("#card7").toggleClass('red');
+				$("#card7-text").toggleClass('black-text');
+				$("#card7-text").toggleClass('white-text');
+				$("#card7-button").toggleClass('black-text');
+				$("#card7-button").toggleClass('white-text');
+			});
+			$("#card8-blue").click(function() {
+				$("#card8").toggleClass('blue');
+				$("#card8-text").toggleClass('black-text');
+				$("#card8-text").toggleClass('white-text');
+				$("#card8-button").toggleClass('black-text');
+				$("#card8-button").toggleClass('white-text');
+			});
+			$("#card8-red").click(function() {
+				$("#card8").toggleClass('red');
+				$("#card8-text").toggleClass('black-text');
+				$("#card8-text").toggleClass('white-text');
+				$("#card8-button").toggleClass('black-text');
+				$("#card8-button").toggleClass('white-text');
+			});
+			$("#card9-blue").click(function() {
+				$("#card9").toggleClass('blue');
+				$("#card9-text").toggleClass('black-text');
+				$("#card9-text").toggleClass('white-text');
+				$("#card9-button").toggleClass('black-text');
+				$("#card9-button").toggleClass('white-text');
+			});
+			$("#card9-red").click(function() {
+				$("#card9").toggleClass('red');
+				$("#card9-text").toggleClass('black-text');
+				$("#card9-text").toggleClass('white-text');
+				$("#card9-button").toggleClass('black-text');
+				$("#card9-button").toggleClass('white-text');
+			});
+			$("#card10-blue").click(function() {
+				$("#card10").toggleClass('blue');
+				$("#card10-text").toggleClass('black-text');
+				$("#card10-text").toggleClass('white-text');
+				$("#card10-button").toggleClass('black-text');
+				$("#card10-button").toggleClass('white-text');
+			});
+			$("#card10-red").click(function() {
+				$("#card10").toggleClass('red');
+				$("#card10-text").toggleClass('black-text');
+				$("#card10-text").toggleClass('white-text');
+				$("#card10-button").toggleClass('black-text');
+				$("#card10-button").toggleClass('white-text');
+			});
+			$("#card11-blue").click(function() {
+				$("#card11").toggleClass('blue');
+				$("#card11-text").toggleClass('black-text');
+				$("#card11-text").toggleClass('white-text');
+				$("#card11-button").toggleClass('black-text');
+				$("#card11-button").toggleClass('white-text');
+			});
+			$("#card11-red").click(function() {
+				$("#card11").toggleClass('red');
+				$("#card11-text").toggleClass('black-text');
+				$("#card11-text").toggleClass('white-text');
+				$("#card11-button").toggleClass('black-text');
+				$("#card11-button").toggleClass('white-text');
+			});
+			$("#card-reset").click(function() {
+				$("#card1").removeClass("red");
+				$("#card1").removeClass("blue");
+				$("#card1-text").removeClass('white-text');
+				$("#card1-text").addClass('black-text');
+				$("#card1-button").removeClass('white-text');
+				$("#card1-button").addClass('black-text');
+				$("#card2").removeClass("red");
+				$("#card2").removeClass("blue");
+				$("#card2-text").removeClass('white-text');
+				$("#card2-text").addClass('black-text');
+				$("#card2-button").removeClass('white-text');
+				$("#card2-button").addClass('black-text');
+			});
+
+		</script>
+
+
+	</body>
+
+
+</html>
